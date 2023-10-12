@@ -1,0 +1,36 @@
+//This program is created by 23CE113_Jeet_Pathak
+
+#include<stdio.h>
+#include<conio.h>
+void main()
+{
+ int num[25],i,positive=0,negative=0,odd=0,even=0;
+ clrscr();
+ printf("Enter 25 Numbers.\n");
+ for(i=0;i<25;i++)
+ {
+  scanf("%d",&num[i]);
+  if(num[i]>0)
+  {
+    positive++;
+  }
+  else
+  {
+  negative++;
+  }
+  if(num[i]%2==0)
+  {
+   even++;
+  }
+  else
+  {
+   odd++;
+  }
+ }
+ printf("Positive:%d\n",positive);
+ printf("Negative:%d\n",negative);
+ printf("Odd:%d\n",odd);
+ printf("Even:%d\n",even);
+ printf("\n\n 23Ce113_Jeet_Pathak");
+ getch();
+}

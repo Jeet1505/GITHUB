@@ -1,0 +1,36 @@
+//This program is created by 23CE113_Jeet_Pathak
+
+#include<stdio.h>
+#include<conio.h>
+void main()
+{
+ int n,m,c;//n=number,m=matchsticks,c=computer
+ m=21;
+ clrscr();
+ while(1)
+ {
+ printf("Enter a number:");
+ scanf("%d",&n);
+ if(n>5||n<1)
+ {
+  printf("Enter a valid value.");
+  continue;
+ }
+ else
+ {
+ c=5-n;
+ printf("Computer choose %d\n",c);
+ m=m-5;
+
+
+ }
+ if(m==1)
+ {
+ printf("You lose!! Computer win...");
+ break;
+ }
+
+ }
+ printf("\n\n 23CE113_Jeet_Pathak");
+ getch();
+}

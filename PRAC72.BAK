@@ -1,0 +1,53 @@
+//This program is created by 23Ce113_Jeet_Pathak
+
+#include<stdio.h>
+#include<conio.h>
+void main()
+{
+ int A[5],B[5],C[10],i,x,j;
+ clrscr();
+ printf("Enter array A:");
+ for(i=0;i<5;i++)
+ {
+  scanf("%d",&A[i]);
+ }
+ printf("Enter array B:");
+  for(i=0;i<5;i++)
+ {
+  scanf("%d",&B[i]);
+ }
+ for(i=0;i<5;i++)
+ {
+  C[i]=A[i];
+ }
+ for(i=0;i<5;i++)
+ {
+  C[i+5]=B[i];
+ }
+ printf("Merge array: ");
+ for(i=0;i<10;i++)
+ {
+ printf("%d ",C[i]);
+ }
+ printf("\n");
+ for(i=0;i<10;i++)
+ {
+ for(j=1;j<10-i;j++)
+ {
+  if(C[j-1]>C[j])
+  {
+   x=C[j];
+   C[j]=C[j-1];
+   C[j-1]=x;
+  }
+ }
+ }
+ printf("Merge and shorted array: ");
+ for(i=0;i<10;i++)
+ {
+  printf("%d ",C[i]);
+ }
+ printf("\n\n 23CE113_Jeet_Pathak");
+
+ getch();
+}
